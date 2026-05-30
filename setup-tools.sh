@@ -69,9 +69,20 @@ hardware() {
 
 }
 
+remote-desktop() {
+    # RDP remote desktop client
+    sudo apt install remmina-plugin-rdp
+}
+
+virtualization() {
+    # Oracle VirtualBox
+    sudo apt install virtualbox -y
+}
+
 # Main 
 update
 upgrade
+autoremove
 terminal-emulators
 system-monitoring
 browsers
@@ -82,6 +93,8 @@ video-tools
 # synergy
 video-tools
 hardware
+remote-desktop
+virtualization
 update
 upgrade
 autoremove
