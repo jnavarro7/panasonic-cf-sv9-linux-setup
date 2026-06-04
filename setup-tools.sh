@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-set -ex 
+# set -ex 
 
 eda-tools() {
     echo "Installing CAD/EDA tools"
@@ -45,6 +45,9 @@ upgrade() {
     sudo apt upgrade -y
 }
 
+full-upgrade() {
+    sudo apt full-upgrade -y
+}
 autoremove() {
     sudo apt autoremove -y
 }
@@ -71,7 +74,7 @@ hardware() {
 
 remote-desktop() {
     # RDP remote desktop client
-    sudo apt install remmina-plugin-rdp
+    sudo apt install remmina-plugin-rdp -y
 }
 
 virtualization() {
@@ -82,6 +85,7 @@ virtualization() {
 # Main 
 update
 upgrade
+full-upgrade
 autoremove
 terminal-emulators
 system-monitoring
