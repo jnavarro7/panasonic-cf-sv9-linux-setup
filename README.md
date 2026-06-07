@@ -11,5 +11,5 @@ Work in progres. . .
 
 ## To do
 
-Add instructions on how to install Ubuntu 24.04 linux on the machine. 
+Add instructions on how to install Ubuntu 24.04 LTS linux on the machine. 
 Instructions on how to setup the machine. 

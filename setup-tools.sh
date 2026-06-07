@@ -82,6 +82,18 @@ virtualization() {
     sudo apt install virtualbox -y
 }
 
+openssh-server() {
+    sudo apt install openssh-server
+    sudo systemctl enable --now ssh
+}
+
+ai-agents() {
+    # OpenClaw
+    curl -fsSL https://openclaw.ai/install.sh | bash
+    # Hermes Agent
+    curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+}
+
 # Main 
 update
 upgrade
@@ -102,7 +114,5 @@ virtualization
 update
 upgrade
 autoremove
-#sudo apt install ./code_1.117.0-1776814346_amd64.deb 
-#sudo apt install /tmp/code_1.117.0-1776814346_amd64.deb 
-
-
+openssh-server
+ai-agents
