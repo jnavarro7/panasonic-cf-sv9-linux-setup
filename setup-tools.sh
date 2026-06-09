@@ -94,6 +94,10 @@ ai-agents() {
     curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 }
 
+ui-control() {
+    sudo apt install wmctrl xdotool
+}
+
 # Main 
 update
 upgrade
@@ -116,3 +120,5 @@ upgrade
 autoremove
 openssh-server
 ai-agents
+ui-control
+
